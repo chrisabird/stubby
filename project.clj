@@ -17,5 +17,4 @@
   :checksum :pass
   :main stubby.host
   :url "http://github.com/chrisabird/stubby"
-  :license {:name "Eclipse Public License"
-            :url "http://www.eclipse.org/legal/epl-v10.html"})
+  :license {:name "" :url ""})
