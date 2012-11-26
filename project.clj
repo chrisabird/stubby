@@ -17,4 +17,4 @@
   :checksum :pass
   :main stubby.host
   :url "http://github.com/chrisabird/stubby"
-  :license {:name "" :url ""})
+  :license {:name "MIT" :url "http://mit-license.org/"})
