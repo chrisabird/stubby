@@ -1,11 +1,11 @@
 (ns stubby.core
-  (:use compojure.core clojure.java.io)
+  (:use compojure.core clojure.java.io stubby.resource-parser)
   (:require [compojure.handler :as handler]))
 
 (def base-path "/tmp")
 
 (defn create-response [file-path]
-  {:status 200 :body (slurp file-path)})
+  (parse-resource (slurp file-path)))
 
 (defn create-missing-response [file-path] 
   {:status 404 :body (str "Missing " file-path)})

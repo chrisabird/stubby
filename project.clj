@@ -3,6 +3,7 @@
   :dependencies [ 
     [org.clojure/clojure "1.4.0"]
     [ring/ring-jetty-adapter "1.1.1"]
+    [cheshire "5.0.0"]
     [compojure "1.1.1"]]
   :profiles { 
     :dev {
