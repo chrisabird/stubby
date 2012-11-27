@@ -4,7 +4,8 @@
     [org.clojure/clojure "1.4.0"]
     [ring/ring-jetty-adapter "1.1.1"]
     [cheshire "5.0.0"]
-    [compojure "1.1.1"]]
+    [compojure "1.1.1"]
+    [org.clojure/tools.cli "0.2.2"]]
   :profiles { 
     :dev {
       :dependencies [

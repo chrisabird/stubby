@@ -2,7 +2,7 @@
   (:use compojure.core clojure.java.io stubby.resource-parser)
   (:require [compojure.handler :as handler]))
 
-(def base-path "/tmp")
+(def base-path (ref ""))
 
 (defn create-response [file-path]
   (parse-resource (slurp file-path)))
@@ -11,7 +11,7 @@
   {:status 404 :body (str "Missing " file-path)})
 
 (defn handle [path params method]
-  (let [file-path (str base-path path "." method)]
+  (let [file-path (str @base-path path "." method)]
     (if (.exists (file file-path)) (create-response file-path) (create-missing-response file-path))))
 
 (defroutes app-routes 
