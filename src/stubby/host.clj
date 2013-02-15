@@ -5,7 +5,7 @@
       stubby.core 
       [clojure.tools.cli :only [cli]]))
 (defn -main [& args]
-  (println "Stubby 1.0")
+  (println "Stubby 1.1")
   (let [[options args banner] (cli args
     ["-p" "--port" "Listen on this port" :parse-fn #(Integer. %) :default 3000] 
     ["-d" "--data-directory" "Directory for request fixtures"])]
