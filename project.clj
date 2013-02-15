@@ -1,4 +1,4 @@
-(defproject stubby "1.1"
+(defproject stubby "1.2"
   :description "Stubbed REST Endpoint"
   :dependencies [ 
     [org.clojure/clojure "1.4.0"]
